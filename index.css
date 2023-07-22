@@ -437,7 +437,7 @@
   .main__img--card {
     margin: 10px;
     height: 500px;
-    width: 500px;
+    width: 450px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -485,8 +485,8 @@
     }
   
     .main__img--card {
-      height: 425px;
-      width: 500px;
+      height: 500px;
+      width: 425px;
     }
   
     .main__content {
