@@ -493,7 +493,7 @@ table {
   }
 
   .container h1 {
-    font-size: 8rem;
+    font-size: 5rem;
     text-transform: uppercase;
     margin: 0 auto;
     color: white;
@@ -545,7 +545,7 @@ table {
     font-size: 30px;
   }
 
-  .container {
+  .container h1{
     font-size: 2rem;
   }
 

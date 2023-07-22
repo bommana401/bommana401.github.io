@@ -673,8 +673,8 @@ table {
     padding-bottom: 20px;
   }
 
-  .container {
-    font-size: 1rem;
+  .container h1 {
+    font-size: 2rem;
   }
 
   .fa-users,
@@ -849,7 +849,7 @@ table {
   align-items: center; /* Add this line to vertically center the container */
 }
 
-.container {
+.container h1 {
   font-size: 5rem;
   text-transform: uppercase;
   color: white;
