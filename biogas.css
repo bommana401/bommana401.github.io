@@ -675,7 +675,7 @@ table {
   }
 
   .container {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .fa-users,
@@ -851,7 +851,7 @@ table {
 }
 
 .container {
-  font-size: 1rem;
+  font-size: 5rem;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -859,7 +859,7 @@ table {
 
 @media (max-width: 767px) {
   .container {
-    font-size: 1.7em; /* Adjust the font size for smaller screens */
+    font-size: 1em; /* Adjust the font size for smaller screens */
   }
 }
 

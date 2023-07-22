@@ -156,7 +156,7 @@ table {
       }
 
       .container {
-        font-size: 2rem; /* Adjust the font size for smaller screens */
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
       }
   }
 
@@ -546,7 +546,7 @@ table {
   }
 
   .container {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .fa-users,
@@ -813,7 +813,7 @@ table {
 }
 
 .container {
-  font-size: 1rem;
+  font-size: 5rem;
   text-transform: uppercase;
   color: white;
   text-align: center;
