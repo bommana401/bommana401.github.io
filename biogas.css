@@ -859,7 +859,7 @@ table {
 
 @media (max-width: 767px) {
   .container {
-    font-size: 2rem; /* Adjust the font size for smaller screens */
+    font-size: 1.7em; /* Adjust the font size for smaller screens */
   }
 }
 
