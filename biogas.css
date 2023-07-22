@@ -433,7 +433,6 @@ table {
 
 .main__img--container {
   text-align: center;
-  
 }
 
 .main__img--card {
@@ -861,6 +860,8 @@ table {
   .container {
     font-size: 1em; /* Adjust the font size for smaller screens */
   }
+
+
 }
 
 /* Additional styles for bordered boxes and adjacent links */
