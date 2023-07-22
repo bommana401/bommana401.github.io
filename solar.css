@@ -177,12 +177,6 @@ table {
     padding: 0;
   }
 
-  .main__img--card {
-    width: 300px;
-    height: 450px;
-  }
-
-
   .navbar__menu {
     display: grid;
     grid-template-columns: auto;
@@ -460,7 +454,7 @@ table {
   /* height: 500px;
   width: 600px; */
   height: 500px;
-  width: 500px;
+  width: 400px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -766,8 +760,6 @@ table {
 }
 
 @media screen and (max-width: 820px) {
-
-
   .footer__links {
     padding-top: 2rem;
   }
