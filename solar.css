@@ -147,7 +147,7 @@ table {
   @media  screen and (max-width: 767px) {
     .main__img--card {
         height: 505px;
-        width: 400px;
+        width: 500px;
       }
   }
 
@@ -445,7 +445,7 @@ table {
   /* height: 500px;
   width: 600px; */
   height: 500px;
-  width: 400px;
+  width: 500px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -494,7 +494,7 @@ table {
 
   .main__img--card {
     height: 500px;
-    width: 400px;
+    width: 500px;
   }
 
   .main__content {
@@ -529,7 +529,7 @@ table {
 
 @media screen and (max-width: 400px) {
   .main__img--card {
-    width: 200px;
+    width: 250px;
     height: 400px;
   }
 
