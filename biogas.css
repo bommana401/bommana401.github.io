@@ -681,7 +681,7 @@ table {
   } */
 
   .container {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 
   .fa-users,
@@ -825,7 +825,7 @@ table {
   }
 }
 
-.background {
+/* .background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)), url('./images/bg.jpg');
   width: 100%;
@@ -841,6 +841,32 @@ table {
   margin: 0 auto;
   color: white;
   text-align: center;
+} */
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url('./images/bg2.jpg');
+  width: 100%;
+  height: 300px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-bottom: solid 2px white;
+  display: flex; /* Add this line to make the container a flex container */
+  justify-content: center; /* Add this line to horizontally center the container */
+  align-items: center; /* Add this line to vertically center the container */
+}
+
+.container {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    font-size: 3rem; /* Adjust the font size for smaller screens */
+  }
 }
 
 /* Additional styles for bordered boxes and adjacent links */

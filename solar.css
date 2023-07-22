@@ -146,8 +146,6 @@ table {
   /* added this to properly space things on the phone */
   @media  screen and (max-width: 767px) {
     .main__img--card {
-        /* height: 500px;
-        width: 400px; */
         height: 505px;
         width: 400px;
       }
@@ -536,9 +534,8 @@ table {
   }
 
   .container {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
-
 
   .fa-users,
   .fa-layer-group {
@@ -772,6 +769,24 @@ table {
   }
 }
 
+/* .background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url('./images/bg2.jpg');
+  width: 100%;
+  height: 300px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-bottom: solid 2px white;
+} */
+
+/* .container {
+  font-size: 8rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+} */
+
 .background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)), url('./images/bg2.jpg');
@@ -780,14 +795,22 @@ table {
   background-color: #000000;
   margin: 0 auto;
   border-bottom: solid 2px white;
+  display: flex; /* Add this line to make the container a flex container */
+  justify-content: center; /* Add this line to horizontally center the container */
+  align-items: center; /* Add this line to vertically center the container */
 }
 
 .container {
-  font-size: 8rem;
+  font-size: 6rem;
   text-transform: uppercase;
-  margin: 0 auto;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    font-size: 3rem; /* Adjust the font size for smaller screens */
+  }
 }
 
 
