@@ -433,6 +433,7 @@ table {
 
 .main__img--container {
   text-align: center;
+  
 }
 
 .main__img--card {
@@ -665,11 +666,22 @@ table {
 @media screen and (max-width: 400px) {
   .main__img--card {
     width: 200px;
-    height: 250px;
+    height: 300px;
   }
 
-  .container {
+  .image-container img {
+    max-width: 60%;
+    padding-bottom: 20px;
+  }
+
+  
+
+  /* .container {
     font-size: 6rem;
+  } */
+
+  .container {
+    font-size: 4.5rem;
   }
 
   .fa-users,
