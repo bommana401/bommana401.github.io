@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar 101</title>
+    <link rel="stylesheet" href="solar.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <!-- <a href="#home" id="navbar__logo">COLOR</a> -->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="index.html" class="navbar__links" id="solar-page">Purpose</a>
+                </li>
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="solar101.html" class="navbar__links" id="solar-page">Solar 101</a>
+                </li>
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="biogas101.html" class="navbar__links" id="bio-page">BioGas 101</a>
+                </li>
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="calculate.html" class="navbar__links" id="map-page">Calculate</a>
+                </li>
+                <li class="navbar__btn" style="list-style: none;">
+                    <a href="reference.html" class="navbar__links" id="references">References</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background" >   
+        <div class="container">
+            <h1>Solar 101</h1>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home" style="background-image: none; background-color: black;">
+        <div class="hero__container">
+            <div class="link__container">
+                <a class="link__item" href="#solSection1" >Advantages of Solar Energy</a>
+                <a class="link__item" href="#solSection2" >How do solar panels work?</a>
+                <a class="link__item" href="#solSection3" >Types of Solar panels</a>
+                <a class="link__item" href="#solSection4" >What should you consider before installing solar systems for residential roofs</a>
+                <a class="link__item" href="#solSection5" >What panels are in the market currently</a>
+                <a class="link__item" href="#solSection6" >Solar Panel Storage</a>
+            </div>
+            <button class="main__btn"><a href="calculate.html" style="color: white;">Calculate Your House's Solar Production</a></button>
+        </div>
+    </div>
+    
+
+    <!-- Hero Section -->
+    <div class="hero" id="solSection1">
+        <div class="hero__container" style="text-align: center;">
+            <!-- <h1 class="hero__heading">Choose your <span>colors</span></h1> -->
+            <p class="hero__description" style="float: center;">Advantages of Solar Energy: </p>
+            <p class="sec1Para" style="color: white"> Source: <a
+                    href="https://www.energy.gov/energysaver/articles/5-benefits-residential-solar"
+                    style="color:white;"> EnergySage </a>
+                <break> </break>
+            </p>
+            <div class="center-box">
+                <p class="sec1Para" style="color: white;"> What does it do to your home: <break> </break>
+                <ul style="list-style: disc; color: white;">
+                    <li style="list-style: disc; color: white; ">Increases values.</li>
+                    <li style="list-style: disc; color: white; ">You can use electricity even if the grid is down and
+                        works in versatile weather/climate.</li>
+                </ul>
+                </p>
+                <p class="sec1Para" style="color: white;"> What does do to you financially: <break> </break>
+                <ul style="list-style: disc; color: white; ">
+                    <li style="list-style: disc; color: white; ">Saves money in the long run. (Payback period can be
+                        between 8 to 10 years)</li>
+                    <li style="list-style: disc; color: white; ">Solar panels are more affordable now than before</li>
+                </ul>
+                </p>
+                <p class="sec1Para" style="color: white;"> What does it do to the planet: <break> </break>
+                <ul style="list-style: disc; color: white; ">
+                    <li style="list-style: disc; color: white; ">Saves money in the long run. (Payback period can be
+                        between 8 to 10 years)</li>
+                    <li style="list-style: disc; color: white; ">“Using solar power instead of conventional forms of
+                        energy reduces the amount of carbon and other pollutants that are emitted into the environment.
+                        Reducing the amount of carbon in our atmosphere translates into less pollution and cleaner air
+                        and water.”</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="solSection2">
+        <div class="hero__container" style="text-align: left;">
+            <!-- <h1 class="hero__heading">Choose your <span>colors</span></h1> -->
+            <p class="hero__description">How do Solar panels work</p>
+            <p class="sec1Para" style="padding-bottom: 25px;"> From <a href="https://www.youtube.com/watch?v=8RjGHmlOu58" style="color: white;"> "The
+                    Science Asylum": Physics of Solar Cells </a>
+                <break> </break>
+            </p>
+
+            <div class="main__img--container">
+                <!-- <div class="main__img--card"><i class="fas fa-layer-group"></i></div> -->
+                <!-- <iframe class="main__img--card" src="https://www.youtube.com/watch?v=8RjGHmlOu58">
+                    <i class="fas fa-layer-group"></i>
+                </iframe> -->
+                <a href="https://www.youtube.com/watch?v=8RjGHmlOu58"><img src="How Do Solar Panels Work (Physics of Solar Cells).jpg" style="width:60%;height:70%s;"></a>
+            </div>
+
+            <p class="sec1Para" style="padding-bottom: 25px;"> From <a href="https://www.youtube.com/watch?v=BfLAYbfUvBk" style="color: white;">
+                    "EnergySage": </a>
+                <break> </break>
+            </p>
+
+            <div class="main__img--container">
+                <!-- <div class="main__img--card"><i class="fas fa-layer-group"></i></div> -->
+                <!-- <iframe class="main__img--card" src="https://www.youtube.com/watch?v=BfLAYbfUvBk">
+                    <i class="fas fa-layer-group"></i>
+                </iframe> -->
+                <a href="https://www.youtube.com/watch?v=8RjGHmlOu58"><img src="How Do Solar Panels Work (energy serge).jpg" style="width:60%;height:70%s;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="main" id="solSection3" style="float: center;">
+        <p class="hero__description" style="text-align: center; padding-bottom: 40px; display: flex; justify-content: center; margin: 0 auto;">Advantages of Solar Energy: </p>
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card">
+                    <h3> Monocrystalline: </h3>
+                    <table>
+                        <tr>
+                            <th>Advatage:</th>
+                            <td> High efficiency and performance</td>
+                        </tr>
+                        <tr>
+                            <th> Disadvatage: </th>
+                            <td> Higher Cost </td>
+                        </tr>
+                        <tr>
+                            <th> Efficiency: </th>
+                            <td> 15-22% </td>
+                        </tr>
+                        <tr>
+                            <th> Type of Silicon: </th>
+                            <td> Single Crystal of Silicon </td>
+                        </tr>
+                        <tr>
+                            <th> LifeSpan: </th>
+                            <td>over 25 years</td>
+                        </tr>
+                        <tr>
+                            <th> Power Output Degrades: </th>
+                            <td> 0.8% </td>
+                        </tr>
+                        <tr>
+                            <th> Type of Cell:</th>
+                            <td> Black cells </td>
+                        </tr>
+                    </table>
+                    <!-- </p> -->
+                </div>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card">
+                    <h3> Polycrystalline: </h3>
+                    <table>
+                        <tr>
+                            <th>Advatage:</th>
+                            <td> Low cost</td>
+                        </tr>
+                        <tr>
+                            <th> Disadvatage: </th>
+                            <td> Less efficiency and performance </td>
+                        </tr>
+                        <tr>
+                            <th> Efficiency: </th>
+                            <td> 15-17% </td>
+                        </tr>
+                        <tr>
+                            <th> Type of Silicon: </th>
+                            <td> Fragments of crystals that are melted together into a mold. </td>
+                        </tr>
+                        <tr>
+                            <th> LifeSpan: </th>
+                            <td>over 25 years</td>
+                        </tr>
+                        <tr>
+                            <th> Power Output Degrades: </th>
+                            <td> 0.8% </td>
+                        </tr>
+                        <tr>
+                            <th> Type of Cell:</th>
+                            <td> Blue cells </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card">
+                    <h3> Thin-film: </h3>
+                    <p style="font-size: 15px; padding-top: 20px;">
+                        "Best to install on large and commercial roof that can’t handle the
+                        additional weight of traditional solar equipment.
+                        Thin-film panels can be a useful for portable solar systems, like on RVs or boats."
+                    </p>
+
+                    <table>
+                        <tr>
+                            <th>Advatage:</th>
+                            <td> Portanle and FLexible</td>
+                        </tr>
+                        <tr>
+                            <th> Disadvatage: </th>
+                            <td> Lower efficiency and performance </td>
+                        </tr>
+                        <tr>
+                            <th> Efficiency: </th>
+                            <td> 11% </td>
+                        </tr>
+                        <tr>
+                            <th> Type of Silicon: </th>
+                            <td> Single Crystal of Silicon </td>
+                        </tr>
+                        <tr>
+                            <th> LifeSpan: </th>
+                            <td> less than 25 years </td>
+                        </tr>
+                        <tr>
+                            <!-- https://www.sciencedirect.com/science/article/pii/S0960148122007042 -->
+                            <th> Power Output Degrades: </th>
+                            <td> 0.2% to 4% (depending on the material type) </td>
+                        </tr>
+                        <tr>
+                            <th> Type of Cell:</th>
+                            <td>
+                                <ul style="color: white;">
+                                    <li style="padding: 0; color: white;"> Amorphous silicon (a-Si)</li>
+                                    <li style="padding: 0; color: white;"> Cadmium telluride (CdTe)</li>
+                                    <li style="padding: 0; color: white;"> Copper Indium Gallium Selenide (CIGS)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="main__img--container">
+                <div class="main__img--card">
+                    <p> Reference to Panels </p>
+                    <!-- https://www.theecoexperts.co.uk/solar-panels/solar-panels-types -->
+                    <img href="https://www.theecoexperts.co.uk/solar-panels/solar-panels-types"
+                        src="Types-of-solar-panels-1-removebg-preview.png" alt="Typed of Panels">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hero" id="solSection4">
+        <div class="hero__container" style="text-align: left;">
+            <!-- <h1 class="hero__heading">Choose your <span>colors</span></h1> -->
+            <p class="hero__description">What should you consider before installing solar systems for residential roofs:
+            </p>
+            <p class="sec1Para" style="color:  white;"> Source: <a
+                    href="https://news.energysage.com/solar-panel-performance-orientation-angle/" style="color: white;">
+                    EnergySage </a>
+                <break> </break>
+            </p>
+            <div class="center-box">
+                <p class="sec1Para" style="font-size: 15px;">
+                <ul style="font-size: 15px;">
+                    <li> Rooftops may not be suitable for solar systems due to tree cover. </li>
+                    <li>
+                        The size, slope, material of your roof are also important factors to consider. it is difficult
+                        to install solar systems on roofs made from wood and slate.
+                        <ul style=" list-style: square; padding-left: 50px">
+                            <li style=" list-style: square;">
+                                steep roof - it may not be possible to place panels at the optimal tilt with traditional
+                                racking
+                                systems. lie your panels flat against the roof.
+                            </li>
+                            <li style=" list-style: square;">
+                                Low-angle roofs will also face obstacles when it comes to solar panel installation and
+                                may
+                                require specialized racking if you’re looking to tilt them at the optimal angle. Less
+                                electricity production (not recommended).
+                            </li>
+                            <li style=" list-style: square;">
+                                flat roof, solar installers will usually opt to use racking systems that mount your
+                                panels up at
+                                an optimal angle. Limits the system size. Tilting panels cause panels to shade one
+                                another
+                                unless you space and stagger the rows of panels out on the roof.
+
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        The age of your roof and how long it will need replacement.
+                    </li>
+                    <li>
+                        The amount of weight your roof can hold. The roofs on most newer homes can handle significantly
+                        more than 3 pounds per square foot of weight.
+                        <br> <br>
+                        <a href="https://news.energysage.com/solar-panel-performance-orientation-angle/"
+                            style="text-decoration: none; color: white;">
+                            To calculate to see if you can roof can handle look at the example below:
+                            In a 6 kilowatt solar installation made up of 20 solar panels, the panels alone will weigh
+                            approximately 800 pounds
+                            (20 panels x 40 lbs). Based on our calculation above, we know that this same system measures
+                            at
+                            352 square feet,
+                            which works out to a weight of 2.3 pounds per square foot (800 pounds ÷ 352 sq ft). When you
+                            include the mounting hardware and
+                            other equipment for your panels, the total weight will be closer to 3-4 pounds per square
+                            foot.”
+                        </a>
+
+                        <a href="https://news.energysage.com/average-solar-panel-size-weight/"
+                            style="text-decoration: none; color:  white;">
+                            <p class="sec1Para" style="padding-bottom: 20px; color:  white;;"> Average weight and size of panels:
+                            </p>
+                        </a>
+
+                        <span>
+                            Each panel has approx. 60 cells and weighs between 33 - 50 pounds.
+                            Most weigh about 40 pounds. The roofs on most newer homes can handle significantly more than
+                            3 pounds per square foot of weight.
+                            The measurements of a panel are 65 inches by 39 inches.
+                        </span>
+
+                    </li>
+                    <p class="sec1Para" style="color: white;"> The ideal Placement for solar Panels on roof:
+                    </p>
+                    <li style="list-style: none; padding-top: 20px;">
+                        "The ideal angle for a solar panel installation is close
+                        or equal to the latitude
+                        of your home (on a south-facing roof), somewhere between 30 degrees and 45 degrees.
+                        By tilting your solar panels the same angle as the latitude (often perpendicular to the sun) of
+                        your
+                        home (which means pointing
+                        your panels at that average position), you are ensuring that you will get the maximum average
+                        output
+                        from your solar power system throughout the year."
+                    </li>
+                </ul>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services Section -->
+    <div class="services" id="solSection5">
+        <h1>Panels in market currently:</h1>
+        <div class="services__wrapper">
+            <div class="services__card" style="font-size: 14px;">
+                <h2 style=" color: white;">Definitions & Information :</h2>
+                <ul>
+                    <li style="padding-left: 30px; list-style: none; color: white;"><a
+                            href="https://www.energy.gov/eere/solar/solar-performance-and-efficiency"
+                            style="text-decoration: none; color: white; padding-bottom: 0px;"> Efficiency: </a></li>
+                    <li style="padding-left: 50px; list-style: none; color: white; "> Efficiency is the percentage of
+                        the solar energy shining on a PV device that is converted into usable electricity.</li>
+                    <li style="padding-left: 30px; list-style: none; color: white;"><a
+                            href="https://news.energysage.com/best-solar-panels-complete-ranking/"
+                            style="text-decoration: none; color: white; padding-bottom: 0px;"> Temperature coefficient:
+                        </a></li>
+                    <li style="padding-left: 50px; list-style: none; color: white; "> A solar panel’s temperature
+                        coefficient measures how much or little its production drops in hot temperatures.</li>
+                    <li style="padding-left: 30px; list-style: none; color: white;"><a
+                            href="https://news.energysage.com/best-solar-panels-complete-ranking/"
+                            style="text-decoration: none; color: white; padding-bottom: 0px;"> Power Output: </a></li>
+                    <li style="padding-left: 50px; list-style: none; color: white; ">Power output refers to the amount
+                        of electricity it generates under standard test conditions.</li>
+                    <li style="padding-left: 30px; list-style: none; color: white;"><a
+                            href="https://news.energysage.com/best-solar-panels-complete-ranking/"
+                            style="text-decoration: none; color: white; padding-bottom: 0px;"> How to choose a panel for
+                            your home: </a></li>
+                    <li style="list-style: none; padding-top: 0px;">
+                        <ul style=" list-style: square; padding-left: 50px">
+                            <li style=" list-style: square; padding-top: 0px; color: white;">
+                                Type of Panel
+                            </li>
+                            <li style=" list-style: square; padding-top: 0px; color: white;">
+                                Power Output
+                            </li>
+                            <li style=" list-style: square; padding-top: 0px; color: white;">
+                                Efficiency
+                            </li>
+                            <li style=" list-style: square; padding-top: 0px; color: white;">
+                                Temperature coefficient
+                            </li>
+                            <li style=" list-style: square; padding-top: 0px; padding-bottom: 0px; color: white;">
+                                Lifespan and Warranty
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="services__card">
+                <h2 style="padding-bottom: 15px;"><a
+                        href="https://news.energysage.com/sunpower-solar-panels-complete-review/"
+                        style="text-decoration: none; color: white; padding-bottom: 0px;">SunPower</a></h2>
+                <ul>
+                    <li style="padding-left: 30px; list-style: none"> Model Name: M Series 440 W </li>
+                    <li style="padding-left: 30px; list-style: none "> Best for its warranty </li>
+                    <li style="padding-left: 30px; list-style: none"> Good for shady & wet climates </li>
+                    <li style="padding-left: 30px; list-style: none"> High Efficiency: 21.7% to 22.8%</li>
+                    <li style="padding-left: 30px; list-style: none"> Best for limited roof or significant shading</li>
+                    <li style="padding-left: 30px; list-style: none"> 40-year warranty</li>
+                    <li style="padding-left: 30px; list-style: none"> Temperature Corfficient: -0.29%/°C</li>
+                    <li style="padding-left: 30px; list-style: none"> Power Output: 440W </li>
+                    <li style="padding-left: 30px; list-style: none"> $20,880 to $24,600 for a 6 kW</li>
+                    <li style="padding-left: 30px; list-style: none"> Solar panels cost between $3.48 and $4.10 per Watt
+                    </li>
+                </ul>
+            </div>
+            <div class="services__card">
+                <h2 style="padding-bottom: 15px;"><a
+                        href="https://news.energysage.com/rec-solar-panels-complete-review/"
+                        style="text-decoration: none; color: white;">REC</a></h2>
+                <ul>
+                    <li style="padding-left: 30px; list-style: none"> Model Name: Alpha Pure-R 430 W </li>
+                    <li style="padding-left: 30px; list-style: none"> Good for warm and dry climates </li>
+                    <li style="padding-left: 30px; list-style: none"> Efficiency: 19.1% to 22.3%</li>
+                    <li style="padding-left: 30px; list-style: none"> Fits nicely with most roofs</li>
+                    <li style="padding-left: 30px; list-style: none"> 25-year warranty</li>
+                    <li style="padding-left: 30px; list-style: none"> Impressive Temperature Corfficient: -0.24%/°C</li>
+                    <li style="padding-left: 30px; list-style: none"> Power Output: 430W </li>
+                    <li style="padding-left: 30px; list-style: none"> $20,880 to $24,600 for a 6 kW</li>
+                    <li style="padding-left: 30px; list-style: none"> Solar panels cost between $2.50 and $3.46 per watt
+                    </li>
+                </ul>
+            </div>
+
+            <div class="services__card">
+                <h2 style="padding-bottom: 15px;"><a
+                        href="https://news.energysage.com/panasonic-solar-panels-complete-review/"
+                        style="text-decoration: none; color: white;">Panasonic</a></h2>
+                <ul>
+                    <li style="padding-left: 30px; list-style: none"> Model Name: EverVolt HK Black Series 410 W </li>
+                    <li style="padding-left: 30px; list-style: none"> High Efficiency </li>
+                    <li style="padding-left: 30px; list-style: none"> Good for warm climates </li>
+                    <li style="padding-left: 30px; list-style: none"> Efficiency: 19.2% to 22.2%</li>
+                    <li style="padding-left: 30px; list-style: none"> Recognized brand </li>
+                    <li style="padding-left: 30px; list-style: none"> 25-year warranty</li>
+                    <li style="padding-left: 30px; list-style: none"> Temperature Corfficient: -0.26%/°C</li>
+                    <li style="padding-left: 30px; list-style: none"> Power Output: 430W </li>
+                    <li style="padding-left: 30px; list-style: none"> $15,660 to $20,700 for a 6 kW</li>
+                    <li style="padding-left: 30px; list-style: none"> Solar panels cost between $2.61 and $3.45 per watt
+                    </li>
+                </ul>
+            </div>
+            <div class="services__card">
+                <h2 style="padding-bottom: 15px;"><a
+                        href="https://news.energysage.com/q-cells-solar-panels-complete-review/"
+                        style="text-decoration: none; color: white;">QCELLS</a></h2>
+                <ul>
+                    <li style="padding-left: 30px; list-style: none"> Model Name: BLK MLG10+410W </li>
+                    <li style="padding-left: 30px; list-style: none"> Chosed by Installers </li>
+                    <li style="padding-left: 30px; list-style: none"> Efficiency: 17.4% to 21.4%</li>
+                    <li style="padding-left: 30px; list-style: none"> Affordable price point and availability. </li>
+                    <li style="padding-left: 30px; list-style: none"> 25-year warranty</li>
+                    <li style="padding-left: 30px; list-style: none"> Temperature Corfficient: -0.34%/°C</li>
+                    <li style="padding-left: 30px; list-style: none"> Power Output: 410W </li>
+                    <li style="padding-left: 30px; list-style: none"> $13,920 to $18,960 for a 6 kW</li>
+                    <li style="padding-left: 30px; list-style: none"> Solar panels cost between $2.32 and $3.16 per Watt
+                    </li>
+                </ul>
+            </div>
+            <div class="services__card">
+                <h2 style="padding-bottom: 15px;"><a
+                        href="https://news.energysage.com/canadian-solar-panels-complete-review/"
+                        style="text-decoration: none; color: white;">Canadian Solar</a></h2>
+                <ul>
+                    <li style="padding-left: 30px; list-style: none"> Model Name: HiHero 445H-AG </li>
+                    <li style="padding-left: 30px; list-style: none"> Efficiency: 15.88% to 20.6%</li>
+                    <li style="padding-left: 30px; list-style: none"> Good for warm climates </li>
+                    <li style="padding-left: 30px; list-style: none"> Good for shady & wet climates </li>
+                    <li style="padding-left: 30px; list-style: none"> Decent quality</li>
+                    <li style="padding-left: 30px; list-style: none"> 15-year warranty</li>
+                    <li style="padding-left: 30px; list-style: none"> Temperature Corfficient: -0.26%/°C</li>
+                    <li style="padding-left: 30px; list-style: none"> Power Output: 410W </li>
+                    <li style="padding-left: 30px; list-style: none"> $16,200 to $19,200 for a 6 kW</li>
+                    <li style="padding-left: 30px; list-style: none"> Solar panels cost between $2.70 and $3.20 per watt
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="solSection6">
+        <div class="main__container" style=" grid-template-columns: none">
+            <div class="main__img--container" style="margin: 0 auto;">
+                <div class="main__img--card" id="card-2" style="align-items: center;" >
+                    <p class="hero__description" style="text-align: center;" ><a
+                            href="https://www.energy.gov/eere/solar/solar-integration-solar-energy-and-storage-basics"  style="text-decoration: none; color: white">
+                            Solar power storage: </a>
+                    </p>
+
+                    <p class="sec1Para" style="font-size: 18px; padding: 30px 30px 0 30px;"> “Storage” refers to technologies that can capture electricity, store it as
+                        another form of energy (chemical, thermal,
+                        mechanical), and then release it for use when it is needed. Lithium-ion batteries are one such
+                        technology. Although using energy storage is
+                        never 100% efficient—some energy is always lost in converting energy and retrieving it—storage
+                        allows the flexible use of energy at different times from when it was generated.
+                        So, storage can increase system efficiency and resilience, and it can improve power quality by
+                        matching supply and demand.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Survey</h2>
+                    <a href="/">Submit Survey</a> 
+                </div>
+
+                <div class="footer__link--items">
+                    <h2>CSS</h2>
+                    <p class="website__rights"><a href="https://www.youtube.com/watch?v=3-2Pj5hxwrw&t=3194s"> (Brian Design) CSS tutorial used </a></p>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="https://www.instagram.com/jashnavibommana/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jashnavi-bommana-8678221b4/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

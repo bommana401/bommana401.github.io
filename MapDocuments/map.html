@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="map.css">
+  <script src="map.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-boxed.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  
+<!-- 
+  Payback = cost of solar (considering tax credits) /annual benefits = saving on bill + SREC 
+1SREC = 1000KWH, each one sold for $10 in 2021 -->
+
+ 
+  <nav class="navbar" id="myTopnav">
+    <a href="solar101.html">Solar 101</a>
+    <a href="biogas101.html">BioGas 101</a>
+    <a href="map.html" class="active">Calculate</a>
+    <a href="calculate.html">References</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+  <section>
+    <Insleft>
+      <h3>Monthly Energy Consumption:</h3>
+      <form id="questionForm">
+        <div>
+          <label for="q1">Monthly Electricity Consumption(kWh):</label>
+          <input type="text" id="elecConsumption" class="answer">
+        </div>
+        <div>
+          <label for="q2">MonthlyElectricity Bill($):</label>
+          <input type="text" id="elecCost" class="answer">
+        </div>
+        <div>
+          <label for="q3">Electric Billing Period (28 - 31):</label>
+          <input type="text" id="elecPeriod" class="answer">
+        </div>
+        <div>
+          <label for="q4">Monthly Gas Consumption(Ccf):</label>
+          <input type="text" id="gasConsumption" class="answer">
+        </div>
+        <div>
+          <label for="q5">Monthly Gas Bill($):</label>
+          <input type="text" id="gasCost" class="answer">
+        </div>
+        <div>
+          <label for="q6">gas Billing Period (28 - 31):</label>
+          <input type="text" id="gasPeriod" class="answer">
+        </div>
+        <div>
+          <label for="q7">Pounds of food waste per day(lbs):</label>
+          <input type="text" id="wastePounds" class="answer">
+        </div>
+      </form>
+    </Insleft>
+
+    <Insright>
+      <h3>Instructions: </h3>
+      <form id="Instructions">
+        <div>
+          <label for="q1">Question 1:</label>
+          <input type="text" id="elecConsumption" class="answer">
+        </div>
+        <div>
+          <label for="q2">Question 2:</label>
+          <input type="text" id="elecCost" class="answer">
+        </div>
+
+      </form>
+    </Insright>
+  </section>
+
+  <!-- This is where the map is and the buttons and the textboxes -->
+  <section>
+    <left>
+      <!--Need to do this method-->
+      <button onclick="RemoveSolarSurface()"> Enter # Solar Measurement you want to remove </button>
+      <input type="number" min="1" id="solarNum">
+
+      <button onclick="RemoveBioSurface()"> Enter # Biogas Measurement you want to remove </button>
+      <input type="number" min="1" id="bioNum">
+
+      <!-- List the removed and added distance for both solar and biogas -->
+      <h4>Solar Surfaces:</h4>
+      <ol id="solarSurfaces" style="font-size: 10px;"></ol>
+      <h4>BioGas Surfaces:</h4>
+      <ol id="bioSurfaces" style="font-size: 10px;"></ol>
+
+    </left>
+
+    <article>
+
+      <div class="card-header bg-white">
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+      </div>
+
+      <div class="card-body m-n3">
+        <div id="map"></div>
+      </div>
+      </p>
+
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXSuzXO3AN8wIvESrCRIpLEmbfoEBKbYo&callback=initMap&libraries=places,geometry">
+        </script>
+
+    </article>
+
+    <right>
+      <h3> Calculations: </h3>
+      <!-- <button onclick="Calculate_distance()"> find distance</button>
+      <input id="distanceFeet" readonly > ft </input>
+      <input id="distanceMiles" readonly> mi </input> -->
+      <button onclick="findArea()"> find area</button>
+      <input id="areaFeet"> ft<sup>2</sup>
+      <input id="areaMeters"> m<sup>2</sup>
+      <input id="areaMiles"> mi<sup>2</sup>
+
+      <div> </div>
+
+      <!-- <label for="coDirection" style="font-size: 14px;"> Pick the Cordinal Direction: </label> -->
+      <select name="coDirection" id="coDirection" style="font-size: 13px;  margin: 6px 0px 2px;">
+        <option value="start">Pick a Cordinal Direction:</option>
+        <option value="south">South</option>
+        <option value="east">East</option>
+        <option value="west">West</option>
+        <option value="southwest">South West</option>
+        <option value="southeast">South East</option>
+        <option value="other">Other</option>
+        <!-- If the user picks this then we need to ask to measure another location.-->
+      </select>
+
+      <div> </div>
+      <button onclick="clearMap()"> Clear Map </button>
+      <button onclick="measureNewSurface()"> Measure New Surface </button>
+      <!-- <button onclick="measureNewSolarSurface()"> Measure New Biogas Surface </button> -->
+
+
+
+      <button onClick="CalculateSolar()"> Calculate Panel</button>
+      <button onClick="CalculateBio()"> Calculate Biodigestors </button>
+
+      <!--Need to do this method-->
+      <button onClick="addToSolar()"> Add to Solar surface area </button>
+      <button onClick="addToBio()"> Add to BioGas surface area </button>
+    </right>
+  </section>
+
+  <section style="background-color: #4caf50;">
+    <div style="color: white; text-align: center; ">
+      <!-- <break> </break> -->
+      <div> <h1 style="padding-top: 20px;">Results:</h1> </div>
+      
+      <h3 id="date"> Date = </h3>
+      <h4 id="temperature"> </h4>
+    </div>
+
+    <insleft style="font-size: 15px;">
+
+      
+      <p> Total number of watts for
+        <select name="diffPanel" id="diffPanel" style="font-size: 13px;  margin: 6px 0px 2px;"
+          onchange="CalculateSolar()">
+          <!-- <option value="start">Pick a solar panel:</option>  -->
+          <option value="sunpower">SunPower</option>
+          <option value="canadiansolar">Canadian Solar</option>
+          <option value="rec">REC</option>
+          <option value="panasonic">Panasonic</option>
+          <!-- If the user picks this then we need to ask to measure another location.-->
+        </select> is =
+        <span id="solarResults"> </span>
+      </p>
+      <div>
+        <span id="solarInstallationTotal"> </span>
+      </div>
+      <div>
+        <button onclick="annualElecSavings()">Show Annual Savings (Does not consider cost of Panels)</button>
+      </div>
+      <div>
+        <span id="annualElecSavings"></span>
+      </div>
+
+      <span id="dailyElecConsumption"> </span>
+    </insleft>
+
+    <insright style="font-size: 15px;">
+      <p>
+        Total Ccf for HomeBiogas System is = <span id="bioResults"> </span>
+      </p>
+      <div>
+        <span id="gasInstallationTotal"> </span>
+      </div>
+      <div>
+        <button onclick="annualGasSavings()"> Show Annual Savings (Does not consider cost of Digestors) </button>
+      </div>
+      <div>
+        <span id="annualGasSavings"> </span>
+      </div>
+
+    </insright>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="calculate.css" />
+    <script src="calculate.js"> </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <!-- <a href="#home" id="navbar__logo">COLOR</a> -->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="index.html" class="navbar__links" id="solar-page">Purpose</a>
+                </li>
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="solar101.html" class="navbar__links" id="solar-page">Solar 101</a>
+                </li>
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="biogas101.html" class="navbar__links" id="bio-page">BioGas 101</a>
+                </li>
+                <li class="navbar__item" style="list-style: none;">
+                    <a href="calculate.html" class="navbar__links" id="map-page">Calculate</a>
+                </li>
+                <li class="navbar__btn" style="list-style: none;">
+                    <a href="reference.html" class="navbar__links" id="references">References</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="bioSection2">
+        <div class="hero__container">
+            <h1 class="hero__heading">Solar Energy and BioGas Caculator</h1>
+            <!-- <h1 class="hero__heading">Choose your <span>colors</span></h1> -->
+            <p class="hero__description"> Instructions: </p>
+            <div class="center-box">
+                <!-- <p class="sec1Para"> What does it do to your home: <break> </break> -->
+                <ol style="list-style: disc; color: wheat;">
+                    <li>
+                        Fill out the questions in Monthly Energy Consumption section to get personalized energy
+                        estimates.
+                    </li>
+                    <li>
+                        Once you have that information in, look up yoou residence in the map searchbar. <br>
+                        Measure the area you want to panels or digestors placed. Once you do, click "Calculate Panel" or
+                        "Caculate Digestor"
+                    </li>
+                    <li>
+                        To add another surface, then click "Measure new surface". Once you measure, click either "Add to
+                        solar surface area" or "Add to BioGas surface area". The list of the surfaces should be
+                        diaplayed to the left.
+                    </li>
+                    <li>
+                        To remove a surface either from Biogas or solar, click on the buttons to the left. Input the
+                        position of the surface you would like to remove.
+                    </li>
+                    <li>
+                        Scroll down to results to see the energy produced by all the surface you have selected.
+                    </li>
+                    <li>
+                        Click on the "Show Annual Savings" in either Solar or BioGas Results to see the annual savings
+                        with the current renewable energy produced.
+                    </li>
+                    <li>
+                        Anytime you change the Solar Panel option, click "Show Annual Saving" button, to see the updated results. Similarily, when you remove a surface, click on "Calculate Panels/Biodigestor" to see the updated results.
+                    </li>
+                    <li>
+                        Simply refresh window to restart again.
+                    </li>
+                </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="main__container" style="grid-template-columns: none; flex-direction: none;">
+            <div class="main__img--container ">
+                <div class="main__img--card">
+                    <!-- <h3>Monthly Energy Consumption:</h3> -->
+                    <form id="questionForm" style="padding: 20px;">
+                        <div>
+                            <label for="q1">Monthly Electricity Consumption(kWh):</label>
+                            <input type="text" id="elecConsumption" class="answer">
+                        </div>
+                        <div>
+                            <label for="q2">MonthlyElectricity Bill($):</label>
+                            <input type="text" id="elecCost" class="answer">
+                        </div>
+                        <div>
+                            <label for="q3">Electric Billing Period (28 - 31):</label>
+                            <input type="text" id="elecPeriod" class="answer">
+                        </div>
+                        <div>
+                            <label for="q4">Monthly Gas Consumption(Ccf):</label>
+                            <input type="text" id="gasConsumption" class="answer">
+                        </div>
+                        <div>
+                            <label for="q5">Monthly Gas Bill($):</label>
+                            <input type="text" id="gasCost" class="answer">
+                        </div>
+                        <div>
+                            <label for="q6">gas Billing Period (28 - 31):</label>
+                            <input type="text" id="gasPeriod" class="answer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h3 class="sec1Para" id="date"> Date = </h3>
+        <h4 class="sec1Para" id="temperature"> </h4>
+        <div class="hero__container__map">
+
+            <left>
+                <!--Need to do this method-->
+                <button onclick="RemoveSolarSurface()"> Enter # Solar Measurement you want to remove </button>
+                <input type="number" min="1" id="solarNum">
+
+                <button onclick="RemoveBioSurface()"> Enter # Biogas Measurement you want to remove </button>
+                <input type="number" min="1" id="bioNum">
+                <div style="color: white;">
+                    <!-- List the removed and added distance for both solar and biogas -->
+                    <h4>Solar Surfaces:</h4>
+                    <ol id="solarSurfaces" style="font-size: 12px;"></ol>
+                    <h4>BioGas Surfaces:</h4>
+                    <ol id="bioSurfaces" style="font-size: 12px;"></ol>
+                </div>
+            </left>
+
+            <article>
+                <div class="card-header bg-white">
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+                </div>
+                <div class="card-body m-n3">
+                    <div id="map"></div>
+                </div>
+                </p>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXSuzXO3AN8wIvESrCRIpLEmbfoEBKbYo&callback=initMap&libraries=places,geometry">
+                    </script>
+            </article>
+
+            <right style="padding: 20px;">
+                <h3> Calculations: </h3>
+                <button onclick="findArea()"> find area</button>
+                <div style="color: white;">
+                    <!-- <div style="font-size: 12px;">  -->
+                    
+                        
+                    <input id="areaFeet" class="mea"> <div style="font-size: 12px;"> ft<sup>2</sup>
+                    </div> 
+                    
+                    <input id="areaMiles" class="mea"> <div style="font-size: 12px;"> mi <sup>2</sup>
+                    </div>  </input>
+                    
+                    <!-- <input id="areaMeters" class="mea"> m<sup>2</sup> -->
+                </div>
+
+                <!-- <label for="coDirection" style="font-size: 14px;"> Pick the Cordinal Direction: </label> -->
+                <select name="coDirection" id="coDirection" style="font-size: 13px;  margin: 6px 0px 2px;">
+                    <option value="start">Pick Co-Direction:</option>
+                    <option value="south">South</option>
+                    <option value="east">East</option>
+                    <option value="west">West</option>
+                    <option value="southwest">South West</option>
+                    <option value="southeast">South East</option>
+                    <option value="other">Other</option>
+                    <!-- If the user picks this then we need to ask to measure another location.-->
+                </select>
+
+                <div> </div>
+                <button onclick="clearMap()"> Clear Map </button>
+                <button onclick="measureNewSurface()"> Measure New Surface </button>
+                <!-- <button onclick="measureNewSolarSurface()"> Measure New Biogas Surface </button> -->
+
+                <button onClick="CalculateSolar()"> Calculate Panel</button>
+                <button onClick="CalculateBio()"> Calculate Biodigestors </button>
+
+                <!--Need to do this method-->
+                <button onClick="addToSolar()"> Add to Solar surface area </button>
+                <button onClick="addToBio()"> Add to BioGas surface area </button>
+            </right>
+        </div>
+
+
+        <!-- <div class="main" id="about"> -->
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2">
+                    <p class="hero__description" style="text-align: center;">Solar Results</p>
+                    <div style="padding-bottom: 40px;">
+                        <p> Total number of watts for
+                            <select name="diffPanel" id="diffPanel" style="font-size: 13px;  margin: 6px 0px 2px;"
+                                onchange="CalculateSolar()">
+                                <!-- <option value="start">Pick a solar panel:</option>  -->
+                                <option value="sunpower">SunPower</option>
+                                <option value="canadiansolar">Canadian Solar</option>
+                                <option value="rec">REC</option>
+                                <option value="panasonic">Panasonic</option>
+                                <option value="qcells">QCELLS</option>
+                                <!-- If the user picks this then we need to ask to measure another location.-->
+                            </select> is =
+                            <span id="solarResults"> </span>
+                        </p>
+
+                        <br>
+                        <span id="dailyElecConsumption"> </span>
+
+                        <div>
+                            <span id="actualNeedSolar"></span>
+                        </div>
+                        <br>
+                        <div>
+                            <span id="solarInstallationTotal"> </span>
+                        </div>
+                        <div>
+                            <button onclick="annualElecSavings()">Show Annual Savings (Does not consider cost of
+                                Panels)</button>
+                        </div>
+
+
+                        <div>
+                            <span id="annualElecSavings"></span>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="main__img--container">
+                <div class="main__img--card" id="card-2">
+                    <p class="hero__description" style="text-align: center; ">BioGas Results</p>
+                    <div style="padding: 40px;">
+                        <p>
+                            Total Ccf for HomeBiogas System is = <span id="bioResults"> </span>
+                        </p>
+
+                        <br>
+                        <span id="dailyGasConsumption"> </span>
+
+                        <div>
+                            <span id="actualNeedGas"></span>
+                        </div>
+                        <br>
+
+                        <div>
+                            <span id="gasInstallationTotal"> </span>
+                        </div>
+                        <div>
+                            <button onclick="annualGasSavings()"> Show Annual Savings (Does not consider cost of
+                                Digestors)
+                            </button>
+                        </div>
+                        <div>
+                            <span id="annualGasSavings"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Survey</h2>
+                    <a href="/">Submit Survey</a>
+                </div>
+
+                <div class="footer__link--items">
+                    <h2>CSS</h2>
+                    <p class="website__rights"><a href="https://www.youtube.com/watch?v=3-2Pj5hxwrw&t=3194s"> (Brian
+                            Design) CSS tutorial used </a></p>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="https://www.instagram.com/jashnavibommana/" class="social__icon--link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jashnavi-bommana-8678221b4/" class="social__icon--link"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
