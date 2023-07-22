@@ -674,14 +674,8 @@ table {
     padding-bottom: 20px;
   }
 
-  
-
-  /* .container {
-    font-size: 6rem;
-  } */
-
   .container {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .fa-users,
@@ -865,7 +859,7 @@ table {
 
 @media (max-width: 767px) {
   .container {
-    font-size: 3rem; /* Adjust the font size for smaller screens */
+    font-size: 2rem; /* Adjust the font size for smaller screens */
   }
 }
 
