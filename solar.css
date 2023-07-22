@@ -145,9 +145,14 @@ table {
 
   /* added this to properly space things on the phone */
   @media  screen and (max-width: 767px) {
-    .main__img--card {
+    /* .main__img--card {
         height: 505px;
-        width: 500px;
+        width: 380px;
+      } */
+
+      .main__img--card {
+        width: 300px;
+        height: 450px;
       }
 
       .container {
@@ -495,10 +500,9 @@ table {
     color: white;
     text-align: center;
   }
-
   .main__img--card {
-    height: 500px;
-    width: 500px;
+    width: 400px;
+    height: 450px;
   }
 
   .main__content {
