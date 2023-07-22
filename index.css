@@ -486,7 +486,7 @@
   
     .main__img--card {
       height: 500px;
-      width: 425px;
+      width: 400px;
     }
   
     .main__content {
@@ -521,7 +521,7 @@
   
   @media screen and (max-width: 400px) {
     .main__img--card {
-      width: 250px;
+      width: 200px;
       height: 250px;
     }
   
