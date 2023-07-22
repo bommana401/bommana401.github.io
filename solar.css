@@ -147,9 +147,15 @@ table {
   @media  screen and (max-width: 767px) {
     .main__img--card {
         height: 500px;
-        width: 370px;
+        width: 400px;
       }
   }
+
+  /* @media screen and (max-width: 400px) {
+    .main__img--card {
+      width: 200px;
+      height: 250px;
+    } */
 
 @media screen and (max-width: 960px) {
   .navbar__container {
@@ -521,8 +527,8 @@ table {
 
 @media screen and (max-width: 400px) {
   .main__img--card {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
   }
 
   .fa-users,
