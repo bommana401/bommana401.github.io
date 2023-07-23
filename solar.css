@@ -571,8 +571,45 @@ table {
     padding: 12px 36px;
     margin: 2.5rem 0;
   }
+}
 
 
+@media screen and (max-width: 350px) {
+  .main__img--card {
+    width: 270px;
+    height: 600px;
+  }
+
+  .hero__description{
+    font-size: 30px;
+  }
+
+  .container h1{
+    font-size: 2rem;
+  }
+
+  .fa-users,
+  .fa-layer-group {
+    font-size: 4rem;
+  }
+
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
+  }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
 }
 
 /* Services Section */
