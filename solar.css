@@ -490,12 +490,7 @@ table {
     text-align: center;
   }
 
-  /* is this my phone? */
-  /* changes this on 7/26 */
-  .main__img--card {
-    width: 180px;
-    height: 550px;
-  }
+
 
   .main__content {
     text-align: center;
@@ -515,12 +510,21 @@ table {
     margin-top: 1rem;
     font-size: 1.5rem;
   }
+
+    /* not my phone? */
+  /* changes this on 7/26 */
+  .main__img--card {
+    width: 400px;
+    height: 550px;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
   /* changes this 7/26 */
+  /* Is this my phone? */
   .main__img--card {
-    width: 400px;
+    width: 200px;
     height: 550px;
   }
 
