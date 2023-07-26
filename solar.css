@@ -536,8 +536,9 @@ table {
     height: 600px;
   }
 
+  /* chnages this 7/26 */
   .services__card{
-    width: 350px;
+    width: 300px;
     height: 600px;
   }
 
@@ -584,9 +585,10 @@ table {
     width: 300px;
     height: 600px;
   }
-
+  
+  /* chnages this 7/26 */
   services__card{
-    width: 300px;
+    width: 280px;
     height: 600px;
   }
 
