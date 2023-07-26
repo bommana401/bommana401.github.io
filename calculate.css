@@ -308,10 +308,15 @@ table {
 
 @media screen and (max-width: 768px) {
 
-  /* Added this 7/26 */
-  .hero{
+  /* Added this 7/26 this keeps the map hidden on the phone. THis worked for Jash's iphone 13 pro max */
+  /* .hero{
+    visibility: hidden;
+  } */
+
+  .hero__container__map{
     visibility: hidden;
   }
+
   .hero__heading {
     font-size: 60px;
   }
