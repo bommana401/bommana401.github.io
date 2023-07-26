@@ -472,6 +472,11 @@ table {
     height: 90%;
   }
 
+  .main__img--card {
+    width: 400px;
+    height: 550px;
+  }
+
   .container h1 {
     font-size: 7.9rem;
     text-transform: uppercase;
@@ -485,10 +490,10 @@ table {
     justify-content: center;
   }
 
-  .main__img--card {
+  /* .main__img--card {
     height: 425px;
     width: 500px;
-  }
+  } */
 
   .main__content {
     text-align: center;
@@ -510,10 +515,10 @@ table {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   .main__img--card {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 600px;
   }
 
   .fa-users,
@@ -537,6 +542,13 @@ table {
   .main__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .main__img--card {
+    width: 300px;
+    height: 600px;
   }
 }
 
