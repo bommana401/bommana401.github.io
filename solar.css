@@ -655,7 +655,7 @@ table {
 .services__card {
   margin: 10px;
   height: 500px;
-  width: 400px;
+  width: 380px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
