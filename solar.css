@@ -146,9 +146,9 @@ table {
   /* added this to properly space things on the phone */
   @media  screen and (max-width: 767px) {
     /* changed this on 7/26 */
-    /* is this my ohone?  */
+    /* not my ohone?  */
       .main__img--card {
-        width: 200px;
+        width: 400px;
         height: 550px;
       }
 
@@ -528,6 +528,9 @@ table {
     width: 350px;
     height: 600px;
   }
+  li{
+    font-size: 10px;
+  }
 
   .hero__description{
     font-size: 30px;
@@ -568,6 +571,10 @@ table {
     width: 300px;
     height: 550px;
   }
+
+  li{
+    font-size: 10px;
+  }
 /* 
   .main__img--card {
     width: 300px;
@@ -576,6 +583,8 @@ table {
   .hero__description{
     font-size: 30px;
   }
+
+  
 
   .container h1{
     font-size: 2rem;
