@@ -147,6 +147,7 @@ table {
   /* this is my phone */
   @media  screen and (max-width: 767px) {
 
+    /* changed this on 7/26 */
       .main__img--card {
         width: 400px;
         height: 550px;
@@ -491,8 +492,9 @@ table {
     text-align: center;
   }
 
+  /* changes this on 7/26 */
   .main__img--card {
-    width: 300px;
+    width: 400px;
     height: 550px;
   }
 
@@ -517,13 +519,9 @@ table {
 }
 
 @media screen and (max-width: 400px) {
-  /* .main__img--card {
-    width: 270px;
-    height: 550px;
-  } */
-
+  /* changes this 7/26 */
   .main__img--card {
-    width: 300px;
+    width: 400px;
     height: 550px;
   }
 
