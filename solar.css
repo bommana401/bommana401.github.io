@@ -541,10 +541,10 @@ table {
     width: 300px;
     height: 600px;
   }
-
+/* 
   li{
     font-size: 10px;
-  }
+  } */
 
   .hero__description{
     font-size: 30px;
@@ -591,11 +591,6 @@ table {
     width: 280px;
     height: 600px;
   }
-
-  /* li{
-    font-size: 10px;
-  } */
-
   .hero__description{
     font-size: 30px;
   }
