@@ -146,13 +146,9 @@ table {
   /* added this to properly space things on the phone */
   /* this is my phone */
   @media  screen and (max-width: 767px) {
-    /* .main__img--card {
-        height: 505px;
-        width: 380px;
-      } */
 
       .main__img--card {
-        width: 380px;
+        width: 400px;
         height: 550px;
       }
 
