@@ -520,9 +520,14 @@
     } */
   
   @media screen and (max-width: 400px) {
-    .main__img--card {
+    /* .main__img--card {
       width: 200px;
       height: 250px;
+    } */
+
+    .main__img--card {
+      width: 350px;
+      height: 600px;
     }
   
     .fa-users,
@@ -645,6 +650,11 @@
   @media screen and (max-width: 768px) {
     .services__wrapper {
       grid-template-columns: 1fr;
+    }
+
+    .main__img--card {
+      width: 400px;
+      height: 550px;
     }
   }
   
