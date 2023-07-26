@@ -244,6 +244,12 @@ table {
   padding: 50px 0;
 }
 
+.heroIns {
+  background: #000000;
+  background: linear-gradient(to right, #161616, #000000);
+  padding: 50px 0;
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -301,6 +307,11 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+
+  /* Added this 7/26 */
+  .hero{
+    visibility: hidden;
+  }
   .hero__heading {
     font-size: 60px;
   }
