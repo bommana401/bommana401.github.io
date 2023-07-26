@@ -152,6 +152,11 @@ table {
         height: 550px;
       }
 
+      .services__card{
+        width: 400px;
+        height: 550px;
+      }
+
       .container {
         font-size: 1.5rem; /* Adjust the font size for smaller screens */
       }
@@ -443,7 +448,6 @@ table {
 .main__img--card {
   margin: 10px;
   height: 500px;
-  /* 500px */
   width: 420px; 
   border-radius: 4px;
   display: flex;
@@ -586,9 +590,9 @@ table {
     height: 600px;
   }
 
-  /* li{
+  li{
     font-size: 10px;
-  } */
+  }
 
   .hero__description{
     font-size: 30px;
@@ -658,7 +662,7 @@ table {
 
 .services__card {
   margin: 10px;
-  height: 425px;
+  height: 500px;
   width: 400px;
   border-radius: 4px;
   display: flex;

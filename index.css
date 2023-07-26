@@ -145,9 +145,13 @@
   
   /* added this to properly space things on the phone */
   @media  screen and (max-width: 767px) {
-    .main__img--card {
-        height: 500px;
+      .main__img--card {
         width: 400px;
+        height: 550px;
+      }
+
+      .container {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
       }
   }
   
@@ -321,7 +325,6 @@
   
     .hero__description {
       font-size: 40px;
-  
     }
   }
   
@@ -546,11 +549,9 @@
     height: 600px;
   }
 
-  /* li{
+  li{
     font-size: 10px;
-  } */
-
-
+  }
 }
   
   /* Services Section */
@@ -647,11 +648,6 @@
   @media screen and (max-width: 768px) {
     .services__wrapper {
       grid-template-columns: 1fr;
-    }
-
-    .main__img--card {
-      width: 400px;
-      height: 550px;
     }
   }
   
