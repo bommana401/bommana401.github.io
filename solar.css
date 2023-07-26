@@ -592,9 +592,9 @@ table {
     height: 600px;
   }
 
-  li{
+  /* li{
     font-size: 10px;
-  }
+  } */
 
   .hero__description{
     font-size: 30px;
