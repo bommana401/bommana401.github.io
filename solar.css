@@ -528,6 +528,12 @@ table {
     width: 350px;
     height: 600px;
   }
+
+  .services__card{
+    width: 350px;
+    height: 600px;
+  }
+
   li{
     font-size: 10px;
   }
@@ -569,7 +575,7 @@ table {
 @media screen and (max-width: 390px) {
   .main__img--card {
     width: 300px;
-    height: 550px;
+    height: 600px;
   }
 
   li{
@@ -584,7 +590,10 @@ table {
     font-size: 30px;
   }
 
-  
+  .services__card{
+    width: 320px;
+    height: 600px;
+  }
 
   .container h1{
     font-size: 2rem;
