@@ -146,8 +146,9 @@ table {
   /* added this to properly space things on the phone */
   @media  screen and (max-width: 767px) {
     /* changed this on 7/26 */
+    /* is this my ohone?  */
       .main__img--card {
-        width: 400px;
+        width: 200px;
         height: 550px;
       }
 
@@ -522,10 +523,10 @@ table {
 
 @media screen and (max-width: 400px) {
   /* changes this 7/26 */
-  /* Is this my phone? */
+  /* not my phone? */
   .main__img--card {
-    width: 200px;
-    height: 550px;
+    width: 350px;
+    height: 600px;
   }
 
   .hero__description{
